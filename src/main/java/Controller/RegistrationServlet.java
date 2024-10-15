@@ -34,13 +34,11 @@ public class RegistrationServlet extends HttpServlet {
                 UserDetails user = udao.userlogin(email, password);
                 
                 if (user == null) {
-                	// Login failed, so register the user
                     udao.insertUserDetails(email, password,role); 
                     out.println("<script type=\"text/javascript\">");
                     out.println("alert('User registered successfully! Please login.');");
                     out.println("location='login.jsp';");
                     out.println("</script>");
-                    //response.sendRedirect("home.jsp"); 
                 } 
             } catch (ClassNotFoundException | SQLException e) {
                 e.printStackTrace();

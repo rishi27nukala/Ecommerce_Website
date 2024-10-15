@@ -30,7 +30,7 @@ public class ProductDao {
                 products.add(row);
             }
         } catch (Exception e) {
-            e.printStackTrace(); // Consider logging instead
+            e.printStackTrace(); 
         }
         return products;
     }
@@ -78,7 +78,7 @@ public class ProductDao {
                 }
             }
         } catch (Exception e) {
-            e.printStackTrace();  // Consider logging errors instead of printing stack trace
+            e.printStackTrace();  
         }
         return row;
     }
@@ -115,7 +115,7 @@ public class ProductDao {
 		}catch (Exception e) {
             e.printStackTrace();
         }
-		return rowCount > 0; // Return true if the deletion was successful
+		return rowCount > 0; 
 	}
     
     public boolean updateProduct(int productId, String name, String category, float price) {

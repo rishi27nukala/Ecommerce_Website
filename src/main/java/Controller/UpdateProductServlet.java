@@ -20,7 +20,6 @@ public class UpdateProductServlet extends HttpServlet {
     }
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         try {
-            // Retrieve form data
             String productIdStr = request.getParameter("productId");
             String name = request.getParameter("name");
             String category = request.getParameter("category");

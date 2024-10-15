@@ -13,26 +13,26 @@ if (auth != null) {
     <title>Login & Registration</title>
     <style>
         body {
-            background-color: #f8f9fa; /* Light background for better contrast */
+            background-color: #f8f9fa; 
         }
 
         .card-header {
-            background-color: #BBA14F; /* Use purple from your theme */
+            background-color: #BBA14F;
             color: white;
             font-size: 1.5rem;
         }
 
         .card-body {
-            background-color: #ffffff; /* White background for the card body */
+            background-color: #ffffff; 
             border-radius: 8px;
         }
 
         .login-card {
-            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1); /* Enhanced shadow for depth */
+            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1); 
             border-radius: 8px;
             width: 100%;
-            max-width: 650px; /* Set a maximum width for larger screens */
-            margin: auto; /* Center the card horizontally */
+            max-width: 650px;
+            margin: auto;
         }
 
         .partition {
@@ -42,34 +42,33 @@ if (auth != null) {
         }
 
         .form-group input {
-            border-radius: 5px; /* Rounded corners for inputs */
+            border-radius: 5px; 
         }
 
         .btn-primary {
-            background-color: #007bff; /* Bootstrap primary color */
+            background-color: #007bff; 
         }
 
         .img-fluid {
-            width: 100%; /* Set width to 100% of its container */
-            height: auto; /* Maintain aspect ratio */
+            width: 100%; 
+            height: auto; 
         }
 
         .large-image {
-            width: 400px; /* Set desired width */
-            height: 400px; /* Set desired height */
-            object-fit: cover; /* Maintain aspect ratio and cover the area */
+            width: 400px; 
+            height: 400px; 
+            object-fit: cover; 
         }
 
-        /* Additional styles for alignment */
         .align-section {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin-top: 10px; /* Add some top margin */
+            margin-top: 10px; 
         }
 
         .align-section h6 {
-            margin: 0; /* Remove default margin */
+            margin: 0; 
         }
     </style>
 </head>
@@ -77,18 +76,16 @@ if (auth != null) {
     <%@include file="includes/navbar.jsp"%>
     <div class="container my-5">
         <div class="card login-card">
-            <!-- Header of the Card -->
+        
             <div class="card-header text-center">User Login</div>
 
-            <!-- Card Body with Two Partitions -->
             <div class="card-body">
+            
                 <div class="row">
-                    <!-- Left Partition for Image -->
                     <div class="col-md-6 partition">
                         <img src="product-images/goldwatch2.gif" alt="Watch GIF" class="img-fluid large-image">
                     </div>
 
-                    <!-- Right Partition for Login Form -->
                     <div class="col-md-6">
                         <form action="user-login" method="post" onsubmit="return checkUserType();">
                             <div class="form-group my-3">

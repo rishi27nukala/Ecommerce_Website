@@ -58,7 +58,7 @@ public class UserDetails {
 	}
 
 
-	@Override
+
 	public String toString() {
 		return "UserDetails [id=" + id + ", email=" + email + ", password=" + password + ", role=" + role + "]";
 	}

@@ -29,19 +29,18 @@ public class LoginServlet extends HttpServlet {
             String password = request.getParameter("login-password");
             try {
                 UserDao udao = new UserDao(DBOperations.getConnection());
-                UserDetails user = udao.userlogin(email, password); // Use the updated method name
-
+                UserDetails user = udao.userlogin(email, password); 
                 if (user != null) {
                     request.getSession().setAttribute("auth", user);
-                    String role = user.getRole(); // Get the user's role
-                    System.out.println("User role: " + role); // Debugging line
+                    String role = user.getRole(); 
+                    System.out.println("User role: " + role); 
 
                     if ("user".equals(role)) {
                         response.sendRedirect("home.jsp");
                     } else if ("data_manager".equals(role)) {
-                        response.sendRedirect("home.jsp"); // Assuming you want to redirect to home for data managers too
+                        response.sendRedirect("home.jsp"); 
                     } else {
-                        response.sendRedirect("error.jsp"); // Handle unexpected roles
+                        response.sendRedirect("error.jsp"); 
                     }
                 } else {
                     response.sendRedirect("register.jsp");

@@ -49,7 +49,7 @@ public class OrderDetails extends ProductDetails{
 		this.date = date;
 	}
 
-	@Override
+
 	public String toString() {
 		return "OrderDetails [orderId=" + orderId + ", uid=" + uid + ", quantity=" + quantity + ", date=" + date + "]";
 	}

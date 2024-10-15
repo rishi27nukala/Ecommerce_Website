@@ -96,29 +96,32 @@
         }
 
         .carousel .item {
-            display: inline-block; /* Make item inline-block */
-            text-align: center; /* Center text under the image */
+            display: inline-block; 
+            text-align: center; 
             width:calc(100% /4);
-            margin: 0 6px; /* Add horizontal margin for spacing */
+            margin: 0 6px; 
         }
 
         .carousel img {
             height: 350px;
             object-fit: contain;
             user-select: none;
-            width: 100%; /* Full width of the item */
-            cursor: pointer; /* Change cursor to pointer for the image */
+            width: 100%; 
+            cursor: pointer; 
         }
 
         .carousel .name {
-            font-size: 1rem; /* Adjust font size for product name */
-            margin-top: -15px; /* Space between image and name */
-            color: #343F4F; /* Dark color for product name */
-        }
-
+    		font-size: 1rem;
+    		margin-top: -15px;
+    		color: #343F4F;
+    		white-space: nowrap; 
+    		overflow: hidden; 
+    		text-overflow: ellipsis; 
+		}
+		
         .carousel .price {
-            font-size: 1.2rem; /* Adjust font size for price */
-            color: #f05454; /* Color for price */
+            font-size: 1.2rem; 
+            color: #f05454;
         }
 
         button.shop-now {
@@ -137,7 +140,7 @@
             background-color: #f77f7f;
         }
         .btn-primary {
-        background-color: #007bff; /* Bootstrap primary color */
+        background-color: #007bff; 
         border-color: #007bff;
     }
     </style>
@@ -147,48 +150,52 @@
 		<img src="product-images/Screenshot (364).png" alt="Logo" width="300" height="60" style="margin-left:35px;margin-top:10px;margin-bottom:5px;" class="d-inline-block align-text-top">
 		<p class="slogan">Find Your Time in Our Space - Where Every Moment Tells a Story</p>
 
-        <h2>Recommended for You</h2>
+        <h3 style="text-align:left;font-size:25px">Recommended for You</h3>
         <div class="wrapper">
             <i id="left" class="fa-solid fa-angle-left"></i>
             <div id="carousel" class="carousel">
                 <div class="item">
                     <a href="home.jsp">
-                        <img src="product-images/Screenshot_20241013_220706_Google.jpg" alt="Product 1" draggable="false">
+                        <img src="product-images/Screenshot (369).png" alt="Product 1" draggable="false">
                     </a>
-                    <div class="name">Product 1 Name</div>
-                    <div class="price">&#8377;999.99</div>
+                    <div class="name">Titan Men''s Multifunctional Karishma watch</div>
+                    <div class="price">&#8377;2870.90</div>
                 </div>
                 <div class="item">
                     <a href="home.jsp">
-                        <img src="product-images/Screenshot_20241013_220706_Google.jpg" alt="Product 2" draggable="false">
+                        <img src="product-images/Screenshot (371).png" alt="Product 2" draggable="false">
                     </a>
-                    <div class="name">Product 2 Name</div>
-                    <div class="price">&#8377;2999.99</div>
+                    <div class="name">Titan Edge Baseline Grey Dial Steel Strap watch</div>
+                    <div class="price">&#8377;6500.00</div>
                 </div>
                 <div class="item">
                     <a href="home.jsp">
-                        <img src="product-images/Screenshot_20241013_220706_Google.jpg" alt="Product 3" draggable="false">
+                        <img src="product-images/Screenshot (382).png" alt="Product 3" draggable="false">
                     </a>
-                    <div class="name">Product 3 Name</div>
-                    <div class="price">&#8377;4999.00</div>
+                    <div class="name">Raga Women''s Charm Elegant Pearl Dial Strap Watch</div>
+                    <div class="price">&#8377;3999.00</div>
                 </div>
                 <div class="item">
                     <a href="home.jsp">
-                        <img src="product-images/Screenshot_20241013_220706_Google.jpg" alt="Product 4" draggable="false">
+                        <img src="product-images/Screenshot (378).png" alt="Product 4" draggable="false">
                     </a>
-                    <div class="name">Product 4 Name</div>
+                    <div class="name">Sonata Quartz Analog Black Dial Leather Strap watch</div>
                     <div class="price">&#8377;1659.99</div>
                 </div>
                 <div class="item">
                     <a href="home.jsp">
-                        <img src="product-images/Screenshot_20241013_220706_Google.jpg" alt="Product 5" draggable="false">
+                        <img src="product-images/Screenshot (375).png" alt="Product 5" draggable="false">
                     </a>
-                    <div class="name">Product 5 Name</div>
-                    <div class="price">$59.99</div>
+                    <div class="name">Anne Klein Quartz Analog Black Dial Steel Strap watch</div>
+                    <div class="price">&#8377;8770.99</div>
                 </div>
             </div>
             <i id="right" class="fa-solid fa-angle-right"></i>
         </div>
+        <a href="home.jsp">
+    		<button class="shop-now" style="margin-top:-5px;">Shop Now</button>
+		</a>
+        
 
     <script>
         const carousel1 = document.getElementById('carousel');

@@ -4,8 +4,8 @@ public class ProductDetails {
     private int id;
     private String name;
     private String category;
-    private float price; // Use float for price instead of String
-    private byte[] image; // Change image type to byte[]
+    private float price; 
+    private byte[] image; 
 
     public ProductDetails() {
     }
@@ -58,7 +58,7 @@ public class ProductDetails {
         this.image = image;
     }
 
-    @Override
+
     public String toString() {
         return "ProductDetails [id=" + id + ", name=" + name + ", category=" + category + ", price=" + price + "]";
     }
